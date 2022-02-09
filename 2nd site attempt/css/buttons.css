@@ -1,0 +1,113 @@
+.buttons {
+    position: absolute;
+    top: 400px;
+    left: 410px;
+    display: flex;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.buttons ul {
+    display: flex;
+    padding-top: 30px;
+}
+
+.buttons li {
+    margin-right: 30px;
+}
+
+.buttons a {
+    display: inline-block;
+    height: 40px;
+    width: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 11px;
+    
+    border-radius: 4px;
+    text-align: center;
+    font-size: 15px;
+}
+
+#greybutton {
+    background-color: #ebebeb;
+    color: #111111;
+    border: 2px solid #afafaf;
+}
+#greybutton:hover {
+    background-color: #f4f4f4;
+    color: #111111;
+    border: 2px solid #afafaf;
+}
+
+#greybutton:active {
+    background-color: #e1e1e1;
+    color: #111111;
+    border: 2px solid #afafaf;
+}
+
+#greyredbutton {
+    background-color: #ebebeb;
+    color: #111111;
+    border: 2px solid #dc241f;
+}
+
+#greyredbutton:hover {
+    background-color: #f4f4f4;
+    color: #272727;
+    border: 2px solid #dc241f;
+}
+
+#greyredbutton:active {
+    background-color: #cecece;
+    color: #272727;
+    border: 2px solid #dc241f;
+}
+
+#redbutton {
+    background-color: #ca130c;
+    color: #fff;
+}
+
+#redbutton:hover {
+    background-color: #e83029;
+    color: #fff;
+}
+
+#redbutton:active {
+    background-color: #a9120c;
+    color: #fff;
+}
+
+#arrowbutton {
+    background-color: #ebebeb;
+    color: #111111;
+    border: 2px solid #afafaf;
+}
+
+#arrowbutton:hover {
+    background-color: #f4f4f4;
+    color: #111111;
+    border: 2px solid #afafaf;
+}
+
+#arrowbutton:active {
+    background-color: #e1e1e1;
+    color: #111111;
+    border: 2px solid #afafaf;
+}
+
+#greenbutton {
+    background-color: #6e9735;
+    color: #fff;
+}
+
+#greenbutton:hover {
+    background-color: #85b444;
+    color: #fff;
+}
+
+#greenbutton:active {
+    background-color: #5e822b;
+    color: #fff;
+}

@@ -1,0 +1,45 @@
+:-webkit-scrollbar {
+    width: 3px;
+    height:3px;
+}
+
+::-webkit-scrollbar-button {
+    width:3px;
+    height:3px;
+}
+
+.horizontal-scroll {
+    position:absolute;
+    display:block;
+    top: 100px;
+    left:0;
+    width:300px;
+    max-height: 1400px;
+    margin:0;
+    background:#cecece;
+    overflow-y:auto;
+    overflow-x:hidden;
+    transform:rotate(-90deg) translateY(-140px);
+    transform-origin: right top;
+}
+
+.horizontal-scroll > div {
+    display:block;
+    background:#fff;
+    transform:rotate(90deg);
+    transform-origin: right top;
+}
+
+.squares{
+    padding:280px 0 0 0;
+}
+
+.squares > div:last-child {
+    padding:0px 0 0 0;
+}
+ 
+.squares > div {
+    width:280px;
+    height:280px;
+    margin:10px;
+}

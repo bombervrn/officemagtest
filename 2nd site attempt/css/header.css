@@ -1,0 +1,64 @@
+.header {
+    padding-top: 17px;
+    padding-bottom: 17px;
+    border-bottom: 1px solid #D6D6D6;
+}
+
+.header-row {
+    display: flex; /* построение элементов хедера в ряд */
+    align-items: center; /* выравнивание элементов хедера  */
+    justify-content: space-between; /* раснятуть элементы по контейнеру */
+}
+
+.header-nav {
+    font-weight: 500; /* жирнота шрифта */
+    color: #292929;
+}
+
+.header-logo {
+    width: 200px;
+}
+
+.header-nav ul {
+    display: flex;
+}
+
+.header-nav li {
+    margin-right: 70px;
+}
+
+.header-nav li:last-child {
+    margin-right: 0px;
+}
+
+.header-nav a {
+    transition: color 0.2s ease;
+}
+
+.header-nav a:hover {
+    color: #e31e25
+}
+
+.header-login {
+    line-height: 50px;
+}
+
+.header-login a {
+    color: #000;
+    padding-right: 20px;
+}
+
+.btn, a.btn {
+    display: inline-block;
+    height: 51px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #e31e25;
+    color: #fff;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: orangered;
+}
