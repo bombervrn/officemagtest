@@ -5,19 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test officemag</title>
-    <link rel="shortcut icon" href="/pictures/icon/icon_om.png" type="image/png">
-    <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/home.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/scroll.css">
-    <link rel="stylesheet" href="./css/input.css">
-    <link rel="stylesheet" href="./css/buttons.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="./css/beautybutton.css">
+    <link rel="shortcut icon" href="/pictures/icon/icon_om.png" type="image/png" />
+<!--CSS-->
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/scroll.css" />
+    <link rel="stylesheet" href="./css/input.css" />
+    <link rel="stylesheet" href="./css/buttons.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/beautybutton.css" />
+<!--JS-->
+    <link rel="stylesheet" type="text/css" href="./css/jquery.horizontal.scroll.css" />
+    <link href='http://fonts.googleapis.com/css?family=Dancing+Script:regular,bold&v1' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="./js/jquery.horizontal.scroll.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#horiz_container_outer').horizontalScroll();
+        });	
+    </script>
 </head>
 <body>
-
+<!--Шапка-->
     <header class="header">
         <div class="container">
             <div class="header-row">
@@ -29,7 +40,6 @@
                         <li><a href="#">Оплата</a></li>
                         <li><a href="#">Магазины</a></li>
                     </ul>
-
                 </nav>
                 <div class="header-login">
                     <a href="#">Войти</a>
@@ -37,96 +47,103 @@
                 </div>
             </div>
         </div>
-
     </header>
-
+    
     <main>
-        <section class="home">
-            <div class="horizontal-scroll squares">
-                <div><img src="./pictures/scroll/bags.jpg" alt="bags"></div>
-                <div><img src="./pictures/scroll/cd.jpg" alt="cd"></div>
-                <div><img src="./pictures/scroll/chair.jpg" alt="chair"></div>
-                <div><img src="./pictures/scroll/coffee.jpg" alt="coffee"></div>
-                <div><img src="./pictures/scroll/cookies.jpg" alt="cookies"></div>
-                <div><img src="./pictures/scroll/milk.jpg" alt="milk"></div>
-                <div><img src="./pictures/scroll/pen.jpg" alt="pen"></div>
-                <div><img src="./pictures/scroll/tea.jpg" alt="tea"></div>
-                <div><img src="./pictures/scroll/teapot.jpg" alt="teapot"></div>
-              </div>
-        </section>
+<!--Скролл-->        
+        <ul id="horiz_container_outer">
+            <li id="horiz_container_inner">
+                <ul id="horiz_container">
+                    <li><a>Пакетики</a><img src="./pictures/scroll/bags.jpg" width="300px" height="300px" alt="bags"></li>
+                    <li><a>Дисочки</a><img src="./pictures/scroll/cd.jpg" width="300px" height="300px" alt="cd"></li>
+                    <li><a>Стульчик</a><img src="./pictures/scroll/chair.jpg" width="300px" height="300px" alt="chair"></li>
+                    <li><a>Кофеёк</a><img src="./pictures/scroll/coffee.jpg" width="300px" height="300px" alt="coffee"></li>
+                    <li><a>Печеньки</a><img src="./pictures/scroll/cookies.jpg" width="300px" height="300px" alt="cookies"></li>
+                    <li><a>Молочко</a><img src="./pictures/scroll/milk.jpg" width="300px" height="300px" alt="milk"></li>
+                    <li><a>Ручечка</a><img src="./pictures/scroll/pen.jpg" width="300px" height="300px" alt="pen"></li>
+                    <li><a>Чаёк</a><img src="./pictures/scroll/tea.jpg" width="300px" height="300px" alt="tea"></li>
+                    <li><a>Чайничек</a><img src="./pictures/scroll/teapot.jpg" width="300px" height="300px" alt="teapot"></li>
+                </ul>
+            </li>
+        </ul>
 
-        <section class="headtext">
-            <h1 id="entertext">Заполните поля</h1>
-            <h6 id="please">ну пожалуйста</h6>
-        </section>
-        
-        <section class="input">
-                <!--Основные поля-->
-                <div class="firstsection"><span id ="firsttext">Основное</span>
-                    <p class="name">
-                        <label for="name">Имя</label>
-                        <input id="nameinput" type="text" name="name" value="по паспорту" onblur="if(this.value.length == 0) this.value = 'по паспорту'" onfocus="if(this.value == 'по паспорту') this.value = '' "/>
-                        </p>
-                    <p class="email">
-                        <label for="email" >E-Mail</label>
-                        <input id="emailinput" type="text" name="email" value="name@officemag.ru" onblur="if(this.value.length == 0) this.value = 'name@officemag.ru'" onfocus="if(this.value == 'name@officemag.ru') this.value = '' " />   
-                        </p>
-                    <p class="colorpick">
-                        <label for="colorpick">Цвет вашего настроения:</label>
-                        <input id="colorinput"type="color" list="colorList">
-                        <datalist id="colorList">
-                        <option value="#ff0000" label="Red">
-                        <option value="#008000" label="Green">
-                        <option value="#0000ff" label="Blue">
-                         </p> 
-                </div>
-                <!--Дополнительные поля-->
-                <div class="secondsection"><span id ="secondtext">Дополнительное</span>
-                    <p class="msg">
-                        <label for="msg">Комментарий</label>
-                        <textarea name="msg" onblur="if(this.value.length == 0) this.value = 'Напишите хоть что-нибудь. Если хотите, конечно.'" onfocus="if(this.value == 'Напишите хоть что-нибудь. Если хотите, конечно.') this.value=''">Напишите хоть что-нибудь. Если хотите, конечно.</textarea>
-                        </p>
-        
-                </div>
-                <!--Радио и галочка-->
-                <div class="thirdsection">
-                    <p class="radio">
-                        <input type="radio" name="day" value="Sunday">
-                        <label for="radio" >Ну а тут просто полежит радиобатон</label>
-                        <input type="radio" name="day" value="Sunday">
-                        <label for="radio" >и тут</label>
-                        </p>
-                    <p class="checkbox">
-                        <input type="checkbox" name="day" value="Saturday">
-                        <label for="checkbox" >Соглашаюсь на всё, что бы вы не придумали и осознаю, что это может означать <a href="#">что угодно</a></label>
-                        </p>
-        
-                </div>
-                <!--Отправка формы-->
-                <div class="send">
-                        <button id="btn">Отправить все мои данные в ФСБ</button>
-                </div>
-
-        </section>
-                <div class="buttons">
-                    <ul>
-                        <li><a id="greybutton" href="#">Посмотреть</a></li>
-                        <li><a id="greyredbutton" href="#">Посмотреть</a></li>
-                        <li><a id="redbutton" href="#">Посмотреть</a></li>
-                        <li><a id="arrowbutton" href="#">Посмотреть</a></li>
-                        <li><a id="greenbutton" href="#">Посмотреть</a></li>
-                    </ul>
-                </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-            <div class="container">
-                <div class="footer-text">
-                    <a href="#">Тексточек-тексток © 2022</a>
-                </div>
+        <div id="scrollbar">
+            <a id="left_scroll" class="mouseover_left" href="#"></a>
+            <div id="track">
+                 <div id="dragBar"></div>
             </div>
+            <a id="right_scroll" class="mouseover_right" href="#"></a></div>
+        </div>
+<!--Кнопки-->
+    </section>
+        <div>
+            <ul class="buttons">
+                <li><a id="greybutton" href="#">Посмотреть</a></li>
+                <li><a id="greyredbutton" href="#">Посмотреть</a></li>
+                <li><a id="redbutton" href="#">Посмотреть</a></li>
+                <li><a id="arrowbutton" href="#">Посмотреть</a></li>
+                <li><a id="greenbutton" href="#">Посмотреть</a></li>
+            </ul>
+        </div>
+    </section>
+<!--Форма-->
+    <section class="headtext">
+        <h1 id="entertext">Заполните поля</h1>
+        <h6 id="please">ну пожалуйста</h6>
+    </section>
+    <section class="input">
+            <div class="firstsection"><span id ="firsttext">Основное</span>
+                <p class="name">
+                    <label for="name">Имя</label>
+                    <input id="nameinput" type="text" name="name" value="по паспорту" onblur="if(this.value.length == 0) this.value = 'по паспорту'" onfocus="if(this.value == 'по паспорту') this.value = '' "/>
+                </p>
+                <p class="email">
+                    <label for="email" >E-Mail</label>
+                    <input id="emailinput" type="text" name="email" value="name@officemag.ru" onblur="if(this.value.length == 0) this.value = 'name@officemag.ru'" onfocus="if(this.value == 'name@officemag.ru') this.value = '' " />   
+                </p>
+                <p class="colorpick">
+                    <label for="colorpick">Цвет вашего настроения:</label>
+                    <input id="colorinput"type="color" list="colorList">
+                    <datalist id="colorList">
+                    <option value="#ff0000" label="Red">
+                    <option value="#008000" label="Green">
+                    <option value="#0000ff" label="Blue">
+                </p>
+            </div>
+            <div class="secondsection"><span id ="secondtext">Дополнительное</span>
+                <p class="msg">
+                    <label for="msg">Комментарий</label>
+                    <textarea name="msg" onblur="if(this.value.length == 0) this.value = 'Напишите хоть что-нибудь. Если хотите, конечно.'" onfocus="if(this.value == 'Напишите хоть что-нибудь. Если хотите, конечно.') this.value=''">Напишите хоть что-нибудь. Если хотите, конечно.</textarea>
+                </p>
+            </div>
+            <div class="thirdsection">
+                <p class="radio">
+                    <input type="radio" name="day" value="Sunday">
+                    <label for="radio" >Ну а тут просто полежит радиобатон</label>
+                    <input type="radio" name="day" value="Sunday">
+                    <label for="radio" >и тут</label>
+                </p>
+                <p class="checkbox">
+                    <input type="checkbox" name="day" value="Saturday">
+                    <label for="checkbox" >Соглашаюсь на всё, что бы вы не придумали и осознаю, что это может означать <a href="#">что угодно</a></label>
+                </p>
+            </div>
+            <div class="send">
+                <button id="btn">Отправить все мои данные в ФСБ</button>
+            </div>
+        </section>  
+    </main>
+<!--Форма-->
+    <section class="bbutton">
+        <button class="beautybutton"><a>Кнопка</a></button>
+    </section>
+<!--Футер-->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-text">
+                <a href="#">Тексточек-тексток © 2022</a>
+            </div>
+        </div>
     </footer>
-
 </body>
 </html>

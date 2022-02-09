@@ -5,13 +5,13 @@
 }
 
 .header-row {
-    display: flex; /* построение элементов хедера в ряд */
-    align-items: center; /* выравнивание элементов хедера  */
-    justify-content: space-between; /* раснятуть элементы по контейнеру */
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
 }
 
 .header-nav {
-    font-weight: 500; /* жирнота шрифта */
+    font-weight: 500; 
     color: #292929;
 }
 

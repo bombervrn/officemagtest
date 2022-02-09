@@ -1,0 +1,48 @@
+.bbutton {
+    display: grid;
+    justify-content: center;
+}
+
+.beautybutton {
+    position: relative;
+    top: 150px;
+    width: 13em;
+    height: 3em;
+    font-size: 80%;
+    color: rgba(255,255,255,.9);
+    text-shadow: #2e7ebd 0 1px 2px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 1.1;
+    white-space: pre-line;
+    padding: .7em 0;
+    border: 1px solid;
+    border-color: #60a3d8 #2970a9 #2970a9 #60a3d8;
+    border-radius: 30px;
+    outline: none;
+    background: #60a3d8 linear-gradient(#6ea3db, #446d9e 50%, #426697);
+    box-shadow: inset rgba(255,255,255,.5) 1px 1px;
+}
+    .beautybutton:first-line{
+    font-size: 120%;
+    font-weight: 700;
+}
+    .beautybutton:hover {
+    color: rgb(255,255,255);
+    background-image: linear-gradient(#7db8f7, #568aca 50%, #5480bd);
+}
+    .beautybutton:active {
+    color: rgb(255,255,255);
+    border-color: #2970a9;
+    background-image: linear-gradient(#3d618e, #446b99);
+    box-shadow: 
+    5px 5px 10px -3px rgba(0,0,0,.35) inset,
+    3px  3px 1px -2px #005775 inset,
+    -3px 3px 1px -2px #005775 inset,
+    3px  -3px 1px -2px #6dc2e7 inset,
+    -3px -3px 1px -2px #6dc2e7 inset;
+}
+ 
+    .beautybutton a {
+        color: #fff;
+}

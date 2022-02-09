@@ -1,6 +1,7 @@
 .headtext {
     position: relative;
-    top: 400px;
+    top: 110px;
+    left: 105px;
     display: flex;
     align-items: flex-end;
 }
@@ -28,7 +29,7 @@
     background: linear-gradient(45deg, #f4f4f6, #fafaf8);
     text-shadow: 0.5px 2px 1px rgba(255, 255, 255, 0.822);
     position:relative;
-    top: 400px;
+    top: 100px;
 }
 
 #nameinput {
